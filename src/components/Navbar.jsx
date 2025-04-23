@@ -34,13 +34,13 @@ export default function Navbar() {
                   👋 <span className="ms-1 fw-semibold">{user.username}</span>
                 </li>
 
-                <li className="nav-item me-2">
+                <li className="nav-item me-2 mt-2 ">
                   <Link to="/favorites" className="btn btn-outline-dark btn-sm">
                     ❤️ Favorites
                   </Link>
                 </li>
 
-                <li className="nav-item">
+                <li className="nav-item me-2 mt-2 ">
                   <button
                     className="btn btn-outline-danger btn-sm"
                     onClick={logout}
@@ -51,12 +51,12 @@ export default function Navbar() {
               </>
             ) : (
               <>
-                <li className="nav-item me-2">
+                <li className="nav-item me-2 mt-2">
                   <Link to="/login" className="btn btn-outline-primary btn-sm">
                     Login
                   </Link>
                 </li>
-                <li className="nav-item">
+                <li className="nav-item me-2 mt-2">
                   <Link to="/register" className="btn btn-primary btn-sm">
                     Register
                   </Link>
